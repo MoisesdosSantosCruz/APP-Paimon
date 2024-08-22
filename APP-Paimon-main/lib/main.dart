@@ -1,6 +1,6 @@
 import 'package:apppaimon2/segpag.dart';
 import 'package:flutter/material.dart';
-
+import 'package:apppaimon2/teste.dart';
 void main() {
   runApp(const MaterialApp(
     title: "App",
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 243, 187, 104),
                         borderRadius:
-                            BorderRadius.circular(10), // radius pra deixar os cantos do container quadrado circulares
+                         BorderRadius.circular(10), // radius pra deixar os cantos do container quadrado circulares
                       ),
                       padding: const EdgeInsets.all(6),
                       child: const Text(
@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const SegPag()),
                   );
                 },
-                style: ButtonStyle(
+                style: ButtonStyle( //botão
                   backgroundColor: MaterialStateProperty.all<Color>(
                     const Color.fromARGB(255, 243, 187, 104),
                   ),

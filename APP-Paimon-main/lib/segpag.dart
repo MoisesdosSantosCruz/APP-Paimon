@@ -41,13 +41,19 @@ class SegPag extends StatelessWidget {
                     margin: const EdgeInsets.only(top: 60),
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 243, 187, 104),
+                      borderRadius:
+                            BorderRadius.circular(24),//mudar as de 10 pra 24
                     ),
-                    child: Image.network(
+                  // copiar esse rect pra ajustar as foto
+                 child: ClipRRect(
+                  borderRadius: BorderRadius.circular(24),
+                  child: Image.network(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-YeehLK4zQEXUlYh4qM5CLah8Cn3aYk2_w&s',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
                     ),
+                  ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 50, right: 50, top: 20),
@@ -83,11 +89,14 @@ class SegPag extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 243, 187, 104),
                     ),
+                    child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
                     child: Image.network(
                       'img/img4.jpeg',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
+                    ),
                     ),
                   ),
                   Padding(
@@ -124,11 +133,14 @@ class SegPag extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 243, 187, 104),
                     ),
+                    child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
                     child: Image.network(
                       'https://i0.wp.com/diariodotransporte.com.br/wp-content/uploads/2016/05/fofao-osas.jpg?resize=547%2C359&ssl=1',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
+                    ),
                     ),
                   ),
                   Padding(
@@ -162,15 +174,18 @@ class SegPag extends StatelessWidget {
                     width: maxWidth,
                     height: maxWidth / 1.5,
                     margin: const EdgeInsets.only(top: 60),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 243, 187, 104),
+                    decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 243, 187, 104),
                     ),
+                    child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
                     child: Image.network(
                       'https://1.bp.blogspot.com/-LvfXQA9-gho/V4v2diFc2rI/AAAAAAAAEqo/ARRmRKT70hQF3lgl3VNrZ92Brezp4gEDQCLcB/s1600/caio-gabriela-II_fiat-acervo-caio-colecao-jose-augusto-de-souza-oliveira.jpg',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
                     ),
+                    ), // alteracao das foto
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 50, right: 50, top: 20),
@@ -206,11 +221,14 @@ class SegPag extends StatelessWidget {
                     decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 243, 187, 104),
                     ),
+                    child: ClipRRect( //as borda
+                  borderRadius: BorderRadius.circular(24),
                     child: Image.network(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjY925Fpiq_aQF9XZi12VHXQf5-BJhuLd7Qg&s',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
+                    ),
                     ),
                   ),
                   Padding(
@@ -247,12 +265,18 @@ class SegPag extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 243, 187, 104),
                     ),
+                    child: ClipRRect( //as borda
+                    borderRadius: BorderRadius.circular(24),
+                    child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
                     child: Image.network(
                       'https://i0.wp.com/diariodotransporte.com.br/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-18-at-18.39.44-e1708292433539.jpeg?fit=799%2C432&ssl=1',
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
                     ),
+                    ),
+                  ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 50, right: 50, top: 20),
